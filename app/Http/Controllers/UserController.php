@@ -99,6 +99,8 @@ class UserController extends Controller
                 'email' => ['email','unique:users,email'],
 
             ]);
+
+            
             $user = new User();
             $password = "123456";
             // $password = Str::random(6);

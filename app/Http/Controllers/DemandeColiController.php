@@ -11,7 +11,6 @@ class DemandeColiController extends Controller
 {
     public function encours()
     {
-
         $colis_livraison_encours = DemandeColi::select(
             DB::raw('demande_colis.*'),
             DB::raw('type_colis.libelle as colis'),
